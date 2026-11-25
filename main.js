@@ -10,8 +10,24 @@ const MAIN = function( $container )
 	this.$screen_lobby = this.$container.querySelector( '.screen_lobby' );
 	this.$screen_timer = this.$container.querySelector( '.screen_timer' );
 
-	// Main state machine
+	// Check for query args
+	const query_args = new URLSearchParams( window.location.search );
+	const minutes_per_player = ( query_args.get( 'minutes_per_player' ) || false );
+	const extra_seconds_per_move = ( query_args.get( 'extra_seconds_per_move' ) || 0 );
 
+	// Go straight to the timer if mins per player is set
+	if( minutes_per_player )
+	{
+		this.state = new FSM( this.states , this , 'timer' ,
+		{
+			minutes_per_player: minutes_per_player,
+			extra_seconds_per_move: extra_seconds_per_move,
+		});
+
+		return;
+	}
+
+	// Launch in default lobby
 	this.state = new FSM( this.states , this , 'lobby' );
 };	
 

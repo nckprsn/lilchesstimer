@@ -1,2 +1,3 @@
-# chesstimer
-A simple little chess timer app
+# Chess Timer
+
+A simple little chess timer app.

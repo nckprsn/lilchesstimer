@@ -8,6 +8,7 @@ body
 	margin: 0;
 
 	font-size: clamp( 16px , 2.5vw , 22px );
+	font-size: clamp( 1em , calc( 1.25vw + 0.75em ) , 2em );
 	font-family: -apple-system , BlinkMacSystemFont , 'Segoe UI' , Roboto , Oxygen-Sans , Ubuntu , Cantarell , sans-serif;
 	line-height: 1.5;
 }

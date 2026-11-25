@@ -1,0 +1,15 @@
+{
+	"short_name": "Lil' Chess Timer",
+	"name": "Lil' Chess Timer",
+	"description": "A simple little chess timer made to be used on mobile."
+	"icons":
+	[
+		{
+			"src": "/favicon-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"start_url": "/",
+	"display": "standalone"
+}

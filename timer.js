@@ -84,6 +84,9 @@ TIMER.prototype.states =
 			// Disable the play/pause button
 			this.$playpause_button.setAttribute( 'disabled' , true );
 
+			// Disable the reset button
+			this.$reset_button.setAttribute( 'disabled' , true );
+
 			// Remove the active player indicator
 			this.$container.removeAttribute( 'data-active-player' );
 		},
@@ -98,6 +101,9 @@ TIMER.prototype.states =
 
 			// (Re)enable the play/pause button
 			this.$playpause_button.removeAttribute( 'disabled' );
+
+			// (Re)enable the reset button
+			this.$reset_button.removeAttribute( 'disabled' );
 		},
 	},
 

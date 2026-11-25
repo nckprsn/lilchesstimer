@@ -1,14 +1,14 @@
 
 // --------------------------------------------------
 
-var FSM = function( states , context , initial_state = false )
+var FSM = function( states , context , initial_state = false , intial_data = {} )
 {
 	this.states = states;
 	this.context = context;
 
 	if( initial_state )
 	{
-		this.set( initial_state );
+		this.set( initial_state , intial_data );
 	}
 };
 

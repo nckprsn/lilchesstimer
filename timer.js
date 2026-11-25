@@ -7,7 +7,7 @@ var TIMER = function( $container , settings = {} )
 	// Settings
 
 	this.minutes_per_player = ( settings.minutes_per_player || 10 );
-	this.extra_seconds_per_move = ( settings.extra_seconds_per_move || 3 );
+	this.extra_seconds_per_move = ( !settings.extra_seconds_per_move && settings.extra_seconds_per_move !== 0 ? 3 : settings.extra_seconds_per_move );
 
 	// DOM references
 

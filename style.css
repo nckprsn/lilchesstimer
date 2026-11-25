@@ -26,6 +26,18 @@ button
 
 /* -------------------------------------------------- */
 
+input
+{
+	line-height: inherit;
+	font-size: inherit;
+
+	font-weight: bold;
+	
+	padding: 0.5rem;
+}
+
+/* -------------------------------------------------- */
+
 .screen
 {
 	width: 100vw;
@@ -39,7 +51,7 @@ button
 	width: 100%;
 	min-height: 100%;
 
-	padding: 1rem;
+	padding: 2rem;
 }
 
 /* -------------------------------------------------- */

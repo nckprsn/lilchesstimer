@@ -72,25 +72,28 @@ input
 
 /* ---------- */
 
-.timer.is_ready
+.timer::after
 {
-	border: 1em solid blue;
+	content: '';
+	display: block;
+	position: absolute;
+	inset: 0;
+	mix-blend-mode: color-burn;
+	opacity: 0.05;
+	pointer-events: none;
 }
 
-.timer.is_running
-{
-	border: 1em solid green;
-}
+.timer.is_ready::after { background: dodgerblue; }
+.timer.is_ready { border: 1px solid dodgerblue; }
 
-.timer.is_paused
-{
-	border: 1em solid orange;
-}
+.timer.is_running::after { background: limegreen; }
+.timer.is_running { border: 1px solid limegreen; }
 
-.timer.is_finished
-{
-	border: 1em solid red;
-}
+.timer.is_paused::after { background: orange; }
+.timer.is_paused { border: 1px solid orange; }
+
+.timer.is_finished::after { background: red; }
+.timer.is_finished { border: 1px solid red; }
 
 /* ---------- */
 /* Layout */

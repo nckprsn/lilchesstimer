@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-GB">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Timer</title>
+
+		<link rel="stylesheet" href="style.css">
+
+		<script src="fsm.js"></script>
+		<script src="lobby.js"></script>
+		<script src="timer.js"></script>
+		<script src="main.js"></script>
+
+	</head>
+
+	<body>
+
+		<div class="main">
+
+			<div class="screen screen_lobby" hidden>
+
+				<div class="lobby">
+
+					<!-- <h1>Chess timer</h1> -->
+
+					<form class="lobby_settings">
+						<p>
+							<label>
+								Minutes per player
+								<input type="number" class="lobby_minutes_per_player_input" value="10" step="5" min="5" max="4320">
+							</label>
+						</p>
+						<p>
+							<label>
+								Extra seconds per move
+								<input type="number" class="lobby_extra_seconds_per_move_input" value="3" step="5" min="0" max="600">
+							</label>
+						</p>
+						<p>
+							<button class="lobby_go_button">Go</button>
+							<button class="lobby_reset_button" type="reset">Reset</button>
+						</p>
+					</form>
+
+				</div>
+
+			</div>
+
+			<div class="screen screen_timer" hidden>
+
+				<div class="timer">
+
+					<div class="timer_controls">
+						<div class="timer_control">
+							<button class="timer_control_button timer_playpause_button"><span class="when_paused">▶️ Play</span><span class="when_not_paused">⏸️ Pause</span></button>
+						</div>
+						<div class="timer_control">
+							<button class="timer_control_button timer_reset_button">♻️ Reset</button>
+						</div>
+						<div class="timer_control">
+							<button class="timer_control_button timer_back_button">❌ Back</button>
+						</div>
+					</div>
+
+					<div class="timer_player timer_player_1">
+						<button class="timer_player_button timer_player_1_button" data-player-index="0">Player 1</button>
+					</div>
+
+					<div class="timer_player timer_player_2">
+						<button class="timer_player_button timer_player_2_button" data-player-index="1">Player 2</button>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<script>
+
+			// --------------------------------------------------
+
+			const main = new MAIN( document.querySelector( '.main' ) );
+
+			// --------------------------------------------------
+
+		</script>
+
+	</body>
+
+</html>

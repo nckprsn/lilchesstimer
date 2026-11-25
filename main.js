@@ -12,7 +12,7 @@ const MAIN = function( $container )
 
 	// Main state machine
 
-	this.state = new FSM( this.states , this , 'timer' );
+	this.state = new FSM( this.states , this , 'lobby' );
 };	
 
 // --------------------------------------------------

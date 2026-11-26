@@ -19,8 +19,10 @@ body
 
 *:focus-visible
 {
-  outline: 0.2rem solid dodgerblue;
+	outline: 0.2rem solid dodgerblue;
 	outline-offset: 0.25rem;
+	
+	transition: none;
 }
 
 /* -------------------------------------------------- */
@@ -54,7 +56,7 @@ button:active
 
 button:hover
 {
-  background: #EEE;
+  background: #e8e8e8;
 }
 
 button[disabled]

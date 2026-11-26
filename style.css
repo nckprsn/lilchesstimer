@@ -134,7 +134,7 @@ input
 
 .timer.is_ready { border: 1rem solid dodgerblue; }
 .timer.is_running { border: 1rem solid limegreen; }
-.timer.is_paused { border: 1rem solid darkorange; }
+.timer.is_paused { border: 1rem solid orange; }
 .timer.is_finished { border: 1rem solid orangered; }
 
 /* ---------- */

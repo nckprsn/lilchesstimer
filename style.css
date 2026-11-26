@@ -24,7 +24,7 @@ button
 
 	font-weight: bold;
 	
-	padding: 2rem 4rem;
+	padding: 2rem 3rem;
 }
 
 /* -------------------------------------------------- */
@@ -132,10 +132,10 @@ input
 
 /* ---------- */
 
-.timer.is_ready { border: 1px solid dodgerblue; }
-.timer.is_running { border: 1px solid limegreen; }
-.timer.is_paused { border: 1px solid orange; }
-.timer.is_finished { border: 1px solid red; }
+.timer.is_ready { border: 1rem solid dodgerblue; }
+.timer.is_running { border: 1rem solid limegreen; }
+.timer.is_paused { border: 1rem solid orange; }
+.timer.is_finished { border: 1rem solid red; }
 
 /* ---------- */
 /* Layout */

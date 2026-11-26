@@ -31,7 +31,7 @@ button
 	padding: 2rem;
 	border-radius:0.5rem;
 
-	background: #EEE;
+	background: #DDD;
 	border: 0.15rem solid #888;
 	box-shadow: 0 0 0 0.2rem white inset;
 	
@@ -47,7 +47,7 @@ button:active
 
 button:hover
 {
-  background: #DDD;
+  background: #EEE;
 }
 
 button[disabled]

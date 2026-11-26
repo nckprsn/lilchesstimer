@@ -30,39 +30,38 @@ button
 
 	padding: 2rem;
 	border-radius:0.5rem;
-	
-	background: lightgrey;
+
+	background: #EEE;
 	border: 0.15rem solid #888;
 	box-shadow: 0 0 0 0.2rem white inset;
 	
 	scale: 1;
-	transition: all ease-out 150ms;
-}
-
-button:hover
-{
-	scale: calc( 1 + 0.04 * ( 1rem / 1em ) );
 	transition: all ease-out 25ms;
 }
 
 button:active
 {
 	scale: calc( 1 - 0.04 * ( 1rem / 1em ) );
-	transition: all ease-out 25ms;
+	box-shadow: 0 0 0 0.1rem white inset;
+}
+
+button:hover
+{
+  background: #DDD;
 }
 
 button[disabled]
 {
-	scale: 1;
-
 	color: #AAA;
 	border-color: #AAA;
 	background: #EEE;
+
+	scale: 1;
 }
 
 button[disabled]::after
 {
-	--mesh-size: 0.4rem;
+	--mesh-size: 0.5rem;
 	--dot-size: 30%;
 	--dot-colour: #666;
 

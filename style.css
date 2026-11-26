@@ -129,7 +129,9 @@ input
 
 	order: 2;
 
-	border-bottom: 2px dotted lightgray;
+
+	border-bottom: 2px dotted currentcolor;
+	opacity: 0.25;
 }
 
 .lobby_settings > p > label > span
@@ -144,6 +146,17 @@ input
 	text-align: right;
 
 	order: 3;
+}
+
+.lobby_buttons
+{
+	display: flex;
+	gap: 1rem
+}
+
+.lobby_buttons > :first-child
+{
+	flex-grow: 1;
 }
 
 /* -------------------------------------------------- */

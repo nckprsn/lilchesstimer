@@ -223,6 +223,17 @@ input
 	font-size: 4em;
 }
 
+.timer_player_button::before
+{
+	content: '';
+	display: block;
+
+	position: absolute;
+	inset: 1rem;
+	background: linear-gradient( transparent calc( 100% * ( 1 - var( --time-elapsed-ratio , 0 ) ) ) , #333 calc( 100% * ( 1 - var( --time-elapsed-ratio , 0 ) ) ) );
+	mix-blend-mode: overlay;
+}
+
 /* ---------- */
 
 .timer_controls

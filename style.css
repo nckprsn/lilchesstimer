@@ -115,9 +115,9 @@ input
 	width: 100%;
 	min-height: 100%;
 
-	padding: 2rem calc( 50% - 12em );
-	border-left: 2rem transparent solid;
-	border-right: 2rem transparent solid;
+	padding: 1.5rem calc( 50% - 15em );
+	border-left: 1rem transparent solid;
+	border-right: 1rem transparent solid;
 }
 
 /* -------------------------------------------------- */
@@ -140,14 +140,16 @@ input
 	
 	align-items: center;
 	
-	gap: 0.5rem;
+	gap: 0.25rem;
+
+	font-size: 1.4em;
 }
 
 .lobby_settings > p > label::after
 {
 	content: '';
 	display: block;
-	min-width: 2em;
+	min-width: 1em;
 
 	height: 1em;
 	flex-grow: 999;

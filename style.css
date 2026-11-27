@@ -27,6 +27,13 @@ body
 
 /* -------------------------------------------------- */
 
+h1
+{
+	font-size: 2.5em;
+}
+
+/* -------------------------------------------------- */
+
 button
 {
 	position: relative;
@@ -126,6 +133,11 @@ input
 {
 	display: grid;
 	gap: 2rem;
+
+  padding-block: 2rem;
+
+	border-top: 2px dotted #BBB;
+	border-bottom: 2px dotted #BBB;
 }
 
 .lobby_settings > *
@@ -142,7 +154,7 @@ input
 	
 	gap: 0.25rem;
 
-	font-size: 1.4em;
+	font-size: 1.5em;
 }
 
 .lobby_settings > p > label::after
@@ -156,8 +168,7 @@ input
 
 	order: 2;
 
-	border-bottom: 2px dotted currentcolor;
-	opacity: 0.25;
+	border-bottom: 2px dotted #BBB;
 }
 
 .lobby_settings > p > label > span

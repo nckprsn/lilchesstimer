@@ -339,7 +339,7 @@ TIMER.prototype.update_player_button_times = function()
 	this.$player_buttons.forEach( ( $player_button , player_index ) =>
 	{
 		$player_button.innerHTML = this.format_time( this.player_times[ player_index ] );
-		$player_button.style.setProperty( '--time-elapsed-ratio' , Math.floor( this.player_times[ player_index ] / ( this.minutes_per_player * 1000 * 60 ) * 1000 ) / 1000 );
+		$player_button.style.setProperty( '--time-elapsed-ratio' , this.player_times[ player_index ] / ( this.minutes_per_player * 1000 * 60 ) );
 	});
 };
 

@@ -126,11 +126,11 @@ TIMER.prototype.states =
 			this.$player_buttons[ this.get_active_player() ].removeAttribute( 'disabled' );
 			this.$player_buttons[ this.get_inactive_player() ].setAttribute( 'disabled' , true );
 
-			// Start ticking
-			this.timer_id = setInterval( this.tick , 100 );
-
 			// Keep track of the exact time we started our timer
 			this.timer_mark = Date.now();
+
+			// Start ticking
+			this.timer_id = setInterval( this.tick , 50 );
 		},
 
 		exit: function( data )
@@ -339,6 +339,7 @@ TIMER.prototype.update_player_button_times = function()
 	this.$player_buttons.forEach( ( $player_button , player_index ) =>
 	{
 		$player_button.innerHTML = this.format_time( this.player_times[ player_index ] );
+		$player_button.style.setProperty( '--time-elapsed-ratio' , this.player_times[ player_index ] / ( this.minutes_per_player * 1000 * 60 ) );
 	});
 };
 

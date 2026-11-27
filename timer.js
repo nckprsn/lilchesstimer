@@ -129,6 +129,9 @@ TIMER.prototype.states =
 			// Keep track of the exact time we started our timer
 			this.timer_mark = Date.now();
 
+			// Stop ticking (if applicable)
+			if( this.timer_id !== null ) clearInterval( this.timer_id );
+
 			// Start ticking
 			this.timer_id = setInterval( this.tick , 50 );
 		},
